@@ -125,6 +125,126 @@ app.post("/", async function(req, res){
             console.error(error);
             output = error;
         });
+    } else if (language === "Rust"){
+        lang = language;
+        const encodedParams = new URLSearchParams();
+        encodedParams.append("LanguageChoice", "46");
+        encodedParams.append("Program", code);
+
+        const options = {
+        method: 'POST',
+        url: 'https://code-compiler.p.rapidapi.com/v2',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'e149f8f771msh13670b981967600p15bfa1jsna7a96a2a1df7',
+            'X-RapidAPI-Host': 'code-compiler.p.rapidapi.com'
+        },
+        data: encodedParams
+        };
+
+        await axios.request(options).then(function (response) {
+            console.log(response.data.Result);
+            output = response.data.Result;
+        }).catch(function (error) {
+            console.error(error);
+            output = error;
+        });
+    } else if (language === "CoffeeScript"){
+        lang = language;
+        const encodedParams = new URLSearchParams();
+        encodedParams.append("LanguageChoice", "50");
+        encodedParams.append("Program", code);
+
+        const options = {
+        method: 'POST',
+        url: 'https://code-compiler.p.rapidapi.com/v2',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'e149f8f771msh13670b981967600p15bfa1jsna7a96a2a1df7',
+            'X-RapidAPI-Host': 'code-compiler.p.rapidapi.com'
+        },
+        data: encodedParams
+        };
+
+        await axios.request(options).then(function (response) {
+            console.log(response.data.Result);
+            output = response.data.Result;
+        }).catch(function (error) {
+            console.error(error);
+            output = error;
+        });
+    } else if (language === "TypeScript"){
+        lang = language;
+        const encodedParams = new URLSearchParams();
+        encodedParams.append("LanguageChoice", "60");
+        encodedParams.append("Program", code);
+
+        const options = {
+        method: 'POST',
+        url: 'https://code-compiler.p.rapidapi.com/v2',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'e149f8f771msh13670b981967600p15bfa1jsna7a96a2a1df7',
+            'X-RapidAPI-Host': 'code-compiler.p.rapidapi.com'
+        },
+        data: encodedParams
+        };
+
+        await axios.request(options).then(function (response) {
+            console.log(response.data.Result);
+            output = response.data.Result;
+        }).catch(function (error) {
+            console.error(error);
+            output = error;
+        });
+    } else if (language === "Ruby"){
+        lang = language;
+        const encodedParams = new URLSearchParams();
+        encodedParams.append("LanguageChoice", "12");
+        encodedParams.append("Program", code);
+
+        const options = {
+        method: 'POST',
+        url: 'https://code-compiler.p.rapidapi.com/v2',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'e149f8f771msh13670b981967600p15bfa1jsna7a96a2a1df7',
+            'X-RapidAPI-Host': 'code-compiler.p.rapidapi.com'
+        },
+        data: encodedParams
+        };
+
+        await axios.request(options).then(function (response) {
+            console.log(response.data.Result);
+            output = response.data.Result;
+        }).catch(function (error) {
+            console.error(error);
+            output = error;
+        });
+    } else if (language === "Perl"){
+        lang = language;
+        const encodedParams = new URLSearchParams();
+        encodedParams.append("LanguageChoice", "13");
+        encodedParams.append("Program", code);
+
+        const options = {
+        method: 'POST',
+        url: 'https://code-compiler.p.rapidapi.com/v2',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'e149f8f771msh13670b981967600p15bfa1jsna7a96a2a1df7',
+            'X-RapidAPI-Host': 'code-compiler.p.rapidapi.com'
+        },
+        data: encodedParams
+        };
+
+        await axios.request(options).then(function (response) {
+            console.log(response.data.Result);
+            output = response.data.Result;
+        }).catch(function (error) {
+            console.error(error);
+            output = error;
+        });
     }
 
     res.redirect("/");
