@@ -1,0 +1,27 @@
+{
+  "name": "online_compiler_interpreter",
+  "version": "1.0.0",
+  "description": "An online website that executes code.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boop-dev/ONLINE-COMPILER-INTERPRETER.git"
+  },
+  "author": "Nnedi, Emmanuel, Kris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boop-dev/ONLINE-COMPILER-INTERPRETER/issues"
+  },
+  "homepage": "https://github.com/boop-dev/ONLINE-COMPILER-INTERPRETER#readme",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "python-shell": "^5.0.0",
+    "vm2": "^3.9.14"
+  }
+}
