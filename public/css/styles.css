@@ -11,7 +11,7 @@ h1 {
   margin-top: 2rem;
   color: white;
   /* text-shadow: 2px 2px #dcdcdc; */
-  font-family: 'Rubik Microbe', cursive;
+  font-family: 'Kanit', sans-serif;
 }
 
 /* Container styles */
@@ -32,10 +32,10 @@ h1 {
   padding: 1rem;
   border-radius: 5px;
   border: 2px solid #ddd;
-  width: 600px;
-  height: 400px;
+  width: 45vw;
+  height: 65vh;
   resize: none;
-  font-family: 'Sono', sans-serif;
+  font-family: 'Courier Prime', monospace;
   background-color: #0c0c0d;
   color: white;
 }
@@ -76,8 +76,8 @@ button[type="submit"]:hover {
   padding: 1rem;
   border-radius: 5px;
   border: 2px solid #ddd;
-  width: 600px;
-  height: 400px;
+  width: 45vw;
+  height: 65vh;
   color: white;
-  font-family: 'Sono', sans-serif;
+  font-family: 'Courier Prime', monospace;
 }
